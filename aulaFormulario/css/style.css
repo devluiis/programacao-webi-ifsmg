@@ -1,0 +1,136 @@
+/* Estilos básicos da página pessoal e do formulário de contato */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f3f5f7;
+}
+
+.cabecalho {
+    padding: 32px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #173f5f;
+}
+
+.cabecalho h1 {
+    margin: 0 0 8px;
+}
+
+.cabecalho p {
+    margin: 0;
+}
+
+main {
+    width: min(90%, 720px);
+    margin: 32px auto;
+}
+
+section {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+    color: #173f5f;
+}
+
+fieldset {
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+    color: #173f5f;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #aab4bf;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #3caea3;
+    border-color: #3caea3;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    padding: 11px 20px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #206a5d;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(0.92);
+}
+
+button.botao-limpar {
+    color: #222;
+    background-color: #e2e8f0;
+}
+
+.rodape {
+    padding: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: #173f5f;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 16px;
+    }
+
+    fieldset {
+        padding: 14px;
+    }
+
+    .botoes button {
+        flex: 1;
+    }
+}

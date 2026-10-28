@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página pessoal com formulário de contato.">
+    <title>Página Pessoal | Entre em contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Minha Página Pessoal</h1>
+        <p>Bem-vindo(a)! Entre em contato pelo formulário abaixo.</p>
+    </header>
+
+    <main>
+        <section id="contato" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Entre em contato</h2>
+            <p>Preencha os campos abaixo para deixar sua mensagem.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Seus dados e sua mensagem</legend>
+
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            autocomplete="name"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="voce@exemplo.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto:</label>
+                        <input
+                            type="text"
+                            id="assunto"
+                            name="assunto"
+                            placeholder="Qual é o assunto?"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="6"
+                            placeholder="Escreva sua mensagem aqui"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="botoes">
+                        <button type="submit">Enviar</button>
+                        <button type="reset" class="botao-limpar">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Minha Página Pessoal.</p>
+    </footer>
+</body>
+</html>
